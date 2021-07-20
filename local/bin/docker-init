@@ -33,7 +33,9 @@ elif [ "${TARGET_ARCH}" = "armhf" ]; then
 	fi
 	cp extras/qemu-arm-static /usr/bin/
 fi
-if [ "${TARGET_ARCH}" = "x64bionic" ]; then
+if [ "${TARGET_ARCH}" = "x64focal" ]; then
+	./image.sh -d ubuntu -a x64 -e focal -q
+elif [ "${TARGET_ARCH}" = "x64bionic" ]; then
 	./image.sh -d ubuntu -a x64 -e bionic -q
 elif [ "${TARGET_ARCH}" = "x64xenial" ]; then
 	./image.sh -d ubuntu -a x64 -e xenial -q

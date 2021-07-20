@@ -4,7 +4,7 @@ FROM ${BUILDER} as builder
 
 LABEL maintainer="forumi0721@gmail.com"
 
-ENV TARGET_ARCH=x64xenial
+ENV TARGET_ARCH=x64focal
 
 COPY local/. /usr/local/
 
@@ -16,7 +16,7 @@ FROM scratch
 
 LABEL maintainer="forumi0721@gmail.com"
 
-COPY --from=builder /build/dist/dist-ubuntu-x64-xenial /
+COPY --from=builder /build/dist/dist-ubuntu-x64-focal /
 
 #RUN ["docker-build-start"]
 
