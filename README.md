@@ -12,14 +12,14 @@
 ![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/aarch64)
 ![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/aarch64)
 ### x64_focal
-![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/focal)
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/focal)
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/x64focal)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64focal)
 ### x64_bionic
-![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/bionic)
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/bionic)
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/x64bionic)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64bionic)
 ### x64_xenial
-![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/xenial)
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/xenial)
+![Docker Image Version](https://img.shields.io/docker/v/forumi0721/ubuntu-base/x64xenial)
+![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64xenial)
 
 
 
