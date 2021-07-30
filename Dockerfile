@@ -16,7 +16,7 @@ FROM scratch
 
 LABEL maintainer="forumi0721@gmail.com"
 
-COPY --from=builder /build/dist/dist-ubuntu-x64 /
+COPY --from=builder /build/dist/dist-ubuntu-latest /
 
 #RUN ["docker-build-start"]
 
