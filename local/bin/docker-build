@@ -33,7 +33,7 @@ if [ "${BUILD_TAG}" = "x64focal" ]; then
 elif [ "${BUILD_TAG}" = "x64bionic" ]; then
 	./imagex.sh -d ubuntu -a x64 -e bionic -q
 else
-	./imagex.sh -d debian -a ${BUILD_TAG:-x64} -q
+	./imagex.sh -d ubuntu -a ${BUILD_TAG:-x64} -q
 fi
 cd /
 echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> OK"
