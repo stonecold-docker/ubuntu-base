@@ -28,7 +28,9 @@ echo
 
 echo "[$(TZ="GMT-9" date '+%Y-%m-%d %H:%M:%S')] ==> Executing bootstrap"
 cd /build
-if [ "${BUILD_TAG}" = "x64focal" ]; then
+if [ "${BUILD_TAG}" = "x64jammy" ]; then
+	./imagex.sh -d ubuntu -a x64 -e jammy -q
+elif [ "${BUILD_TAG}" = "x64focal" ]; then
 	./imagex.sh -d ubuntu -a x64 -e focal -q
 elif [ "${BUILD_TAG}" = "x64bionic" ]; then
 	./imagex.sh -d ubuntu -a x64 -e bionic -q
