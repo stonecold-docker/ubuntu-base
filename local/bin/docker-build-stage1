@@ -27,6 +27,13 @@ DEBIAN_COMPONENTS="main universe restricted multiverse"
 
 echo "Current version : ${DEBIAN_EDITION}"
 
+#podman workaround
+if ! mknod /tmp/test-dev-null c 1 3 2>/dev/null; then
+	export container=lxc
+else
+	rm -f /tmp/test-dev-null
+fi
+
 #fix error
 sed -i -e 's/; && / \&\& /g' /usr/share/debootstrap/scripts/gutsy
 if [ ! -e /usr/share/debootstrap/scripts/${DEBIAN_DIST} -a -e /usr/share/debootstrap/scripts/gutsy ]; then
