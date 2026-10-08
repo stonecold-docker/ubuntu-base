@@ -36,8 +36,8 @@ fi
 
 #fix error
 sed -i -e 's/; && / \&\& /g' /usr/share/debootstrap/scripts/gutsy
-if [ ! -e /usr/share/debootstrap/scripts/${DEBIAN_DIST} -a -e /usr/share/debootstrap/scripts/gutsy ]; then
-	ln -s gutsy /usr/share/debootstrap/scripts/${DEBIAN_DIST}
+if [ ! -e /usr/share/debootstrap/scripts/${DEBIAN_EDITION} -a -e /usr/share/debootstrap/scripts/gutsy ]; then
+	ln -s gutsy /usr/share/debootstrap/scripts/${DEBIAN_EDITION}
 fi
 
 #debootstrap 1st
