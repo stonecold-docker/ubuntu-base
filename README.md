@@ -5,25 +5,19 @@
 
 
 ----------------------------------------
-### x64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64)
-### aarch64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/aarch64)
-### armv7
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/armv7)
-### x64_focal
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64focal)
-### x64_bionic
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/x64bionic)
+### amd64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/latest?arch=amd64)
+### arm64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/ubuntu-base/latest?arch=arm64)
 
 
 
 ----------------------------------------
 #### Description
 
-* Distribution : [Ubuntu](https://www.ubuntu.com/)
-* Architecture : x64,aarch64,armv7
-* Appplication : -
+* Distribution : [Ubuntu](https://ubuntu.com/)
+* Architecture : amd64, arm64
+* Application : -
 
 
 
@@ -32,7 +26,7 @@
 
 ```sh
 docker run -i -t --rm \
-           forumi0721/ubuntu-base:[ARCH_TAG]
+           forumi0721/ubuntu-base:latest
 ```
 
 
@@ -41,7 +35,7 @@ docker run -i -t --rm \
 #### Usage
 
 ```dockerfile
-FROM forumi0721/ubuntu-base:[ARCH_TAG]
+FROM forumi0721/ubuntu-base:latest
 
 RUN 'build-code'
 ```
