@@ -20,7 +20,7 @@ if [ "${DEBIAN_EDITION}" = "latest" ]; then
 	DEBIAN_EDITION="$(wget -q -O - https://releases.ubuntu.com/ | grep LTS | sed -e 's/^.* Ubuntu //g' | grep '^[0-9]' | sort -V -u | tail -1 | sed -e 's/^.* (\(.*\) .*)/\1/g' | tr '[:upper:]' '[:lower:]')"
 fi
 DEBIAN_ARCH="$(uname -m | sed -e 's/x86_64/amd64/g' -e 's/aarch64/arm64/g')"
-DEBIAN_MIRROR="https://http.krfoss.org/ubuntu/"
+DEBIAN_MIRROR="http://http.krfoss.org/ubuntu/"
 DEBIAN_BOOTSTRAP_MIRROR="$([ "${DEBIAN_ARCH}" = "arm64" ] && echo "https://kr.ports.ubuntu.com/ubuntu-ports" || echo "https://kr.archive.ubuntu.com/ubuntu")"
 DEBIAN_COMPONENTS="main universe restricted multiverse"
 
